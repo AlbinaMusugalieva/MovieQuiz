@@ -1,3 +1,9 @@
+//
+// StatisticService.swift
+//  MovieQuiz
+//
+//  Created by Albina Musugalieva
+//
 import Foundation
 
 final class StatisticService: StatisticServiceProtocol {
@@ -38,8 +44,8 @@ final class StatisticService: StatisticServiceProtocol {
     }
     
     var totalAccuracy: Double{
-       var totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
-       var totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
+       let totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
+       let totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
         
         if totalQuestionsAsked != 0 {
             return Double(totalCorrectAnswers)/Double(totalQuestionsAsked)*100
@@ -51,8 +57,8 @@ final class StatisticService: StatisticServiceProtocol {
     }
     
     func store(gameResult: GameResult) {
-        var totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
-        var totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
+        let totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
+        let totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
         
         storage.set(gamesCount+1,forKey: Keys.gamesCount.rawValue)
         

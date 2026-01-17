@@ -1,3 +1,10 @@
+//
+// QuizQuestions.swift
+//  MovieQuiz
+//
+//  Created by Albina Musugalieva
+//
+
 import Foundation
 
 struct QuizQuestion{

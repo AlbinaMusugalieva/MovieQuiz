@@ -1,7 +1,13 @@
-import Foundation
+//
+// AlertPresenter.swift
+//  MovieQuiz
+//
+//  Created by Albina Musugalieva
+//
 import UIKit
 
 final class AlertPresenter {
+    // MARK: - Public Methods
     func show(in vc: UIViewController, model: AlertModel) {
         let alert = UIAlertController(
             title: model.title,
