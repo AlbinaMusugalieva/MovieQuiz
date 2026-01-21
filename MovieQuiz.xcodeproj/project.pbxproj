@@ -27,6 +27,9 @@
 		B12619F22F111C3B00DEA814 /* StatisticServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12619F12F111C3B00DEA814 /* StatisticServiceProtocol.swift */; };
 		B12619F42F111CA800DEA814 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12619F32F111CA800DEA814 /* GameResult.swift */; };
 		B12619F62F111E8D00DEA814 /* StatisticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12619F52F111E8D00DEA814 /* StatisticService.swift */; };
+		B158B0DC2F1C101300324CE6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158B0DB2F1C101300324CE6 /* NetworkClient.swift */; };
+		B158B0DE2F1C110200324CE6 /* MostPopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158B0DD2F1C110200324CE6 /* MostPopularMovies.swift */; };
+		B158B0E02F1C118800324CE6 /* MoviesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B158B0DF2F1C118800324CE6 /* MoviesLoader.swift */; };
 		B19A45B62EEDEEC700DA5B47 /* YS Display-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A45B52EEDEEC700DA5B47 /* YS Display-Medium.ttf */; };
 		B19A45B72EEDEEC700DA5B47 /* YS Display-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19A45B42EEDEEC700DA5B47 /* YS Display-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,9 @@
 		B12619F12F111C3B00DEA814 /* StatisticServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticServiceProtocol.swift; sourceTree = "<group>"; };
 		B12619F32F111CA800DEA814 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		B12619F52F111E8D00DEA814 /* StatisticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticService.swift; sourceTree = "<group>"; };
+		B158B0DB2F1C101300324CE6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		B158B0DD2F1C110200324CE6 /* MostPopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularMovies.swift; sourceTree = "<group>"; };
+		B158B0DF2F1C118800324CE6 /* MoviesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesLoader.swift; sourceTree = "<group>"; };
 		B19A45B42EEDEEC700DA5B47 /* YS Display-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Bold.ttf"; sourceTree = "<group>"; };
 		B19A45B52EEDEEC700DA5B47 /* YS Display-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YS Display-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +83,7 @@
 				B12619E72F10355000DEA814 /* QuizQuestion.swift */,
 				B12619EF2F110A1C00DEA814 /* AlertModel.swift */,
 				B12619F32F111CA800DEA814 /* GameResult.swift */,
+				B158B0DD2F1C110200324CE6 /* MostPopularMovies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +96,8 @@
 				B12619EB2F104C2700DEA814 /* QuestionFactoryDelegate.swift */,
 				B12619F12F111C3B00DEA814 /* StatisticServiceProtocol.swift */,
 				B12619F52F111E8D00DEA814 /* StatisticService.swift */,
+				B158B0DB2F1C101300324CE6 /* NetworkClient.swift */,
+				B158B0DF2F1C118800324CE6 /* MoviesLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -230,10 +239,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD5EE5DE284D7887003966EF /* UIColor+Extensions.swift in Sources */,
+				B158B0DE2F1C110200324CE6 /* MostPopularMovies.swift in Sources */,
 				AD7AFA552836189F00399704 /* Array+Extensions.swift in Sources */,
 				B12619EA2F103EF600DEA814 /* QuestionFactoryProtocol.swift in Sources */,
 				B12619EC2F104C2700DEA814 /* QuestionFactoryDelegate.swift in Sources */,
 				B12619F42F111CA800DEA814 /* GameResult.swift in Sources */,
+				B158B0DC2F1C101300324CE6 /* NetworkClient.swift in Sources */,
+				B158B0E02F1C118800324CE6 /* MoviesLoader.swift in Sources */,
 				B12619F02F110A1C00DEA814 /* AlertModel.swift in Sources */,
 				AD1ABAB62831907B00B3E448 /* MovieQuizViewController.swift in Sources */,
 				B12619E42F10351800DEA814 /* QuizStepModel.swift in Sources */,

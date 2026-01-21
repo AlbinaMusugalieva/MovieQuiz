@@ -30,9 +30,9 @@ final class StatisticService: StatisticServiceProtocol {
     
     var bestGame: GameResult{
         get{
-           GameResult(correct: storage.integer(forKey: Keys.bestGameCorrect.rawValue),
-                      total: storage.integer(forKey: Keys.bestGameTotal.rawValue),
-                      date: storage.object(forKey: Keys.bestGameDate.rawValue) as? Date ?? Date())
+            GameResult(correct: storage.integer(forKey: Keys.bestGameCorrect.rawValue),
+                       total: storage.integer(forKey: Keys.bestGameTotal.rawValue),
+                       date: storage.object(forKey: Keys.bestGameDate.rawValue) as? Date ?? Date())
         }
         
         set{
@@ -44,8 +44,8 @@ final class StatisticService: StatisticServiceProtocol {
     }
     
     var totalAccuracy: Double{
-       let totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
-       let totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
+        let totalCorrectAnswers: Int = storage.integer(forKey: Keys.totalCorrectAnswers.rawValue)
+        let totalQuestionsAsked: Int = storage.integer(forKey: Keys.totalQuestionsAsked.rawValue)
         
         if totalQuestionsAsked != 0 {
             return Double(totalCorrectAnswers)/Double(totalQuestionsAsked)*100
@@ -73,5 +73,5 @@ final class StatisticService: StatisticServiceProtocol {
         
     }
     
-     
+    
 }
